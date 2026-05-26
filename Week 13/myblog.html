@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisesh Travel Blog</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                "aside main main"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            grid-area: header;
+            background-color: #38bdf8;
+            color: white;
+            padding: 14px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        nav {
+            grid-area: nav;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0369a1;
+            font-weight: bold;
+        }
+        aside {
+            grid-area: aside;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        aside img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .category {
+            background-color: #e0f2f3;
+            padding: 8px;
+            margin: 6px 0;
+            border-radius: 8px;
+        }
+        main {
+            grid-area: main;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .post {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        .post img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 10px 0;
+        }
+        footer {
+            grid-area: footer;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Nisesh Travel Blog</h1>
+            <p>Stories, Photos and Tips from my Trips</p>
+        </header>
+
+        <!-- Nav -->
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Travel</a>
+            <a href="#">Food</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <!-- Aside -->
+        <aside>
+            <h2>About Me</h2>
+            <img src="pic/meronepal.png" alt="Nisesh Tamang">
+            <p>Hello! I am <strong>Nisesh Tamang</strong>. I am a passionate
+               <strong>Videographer & Video Editor</strong> who loves traveling,
+               capturing moments through the lens, and sharing stories from
+               around the world.</p>
+            <h3>Hobbies</h3>
+            <div class="category">🎥 Videography</div>
+            <div class="category">🎬 Video Editing</div>
+            <div class="category">✈️ Traveling</div>
+            <div class="category">📸 Photography</div>
+            <h3>Categories</h3>
+            <div class="category">Travel Tips</div>
+            <div class="category">Food</div>
+            <div class="category">Nature</div>
+            <div class="category">City Life</div>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <article class="post">
+                <h2>A Beautiful Morning in Nepal</h2>
+                <p>Date: May 19, 2026 &nbsp;|&nbsp; By <strong>Nisesh Tamang</strong></p>
+                <img src="pic/pic2.png" alt="Nepal Morning">
+                <p>Nepal is one of the most beautiful places I have ever visited.
+                   As a videographer, capturing its misty mountains and golden
+                   sunrise was truly a dream come true.</p>
+            </article>
+            <article class="post">
+                <h2>Street Food Adventures in Kathmandu</h2>
+                <p>Date: May 19, 2026 &nbsp;|&nbsp; By <strong>Nisesh Tamang</strong></p>
+                <img src="pic/nepal.png" alt="Kathmandu Food">
+                <p>Kathmandu's street food scene is vibrant and full of flavors.
+                   I filmed every bite — from momos to sel roti — and edited
+                   it into a short travel vlog!</p>
+            </article>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Nisesh Tamang Travel Blog. All rights reserved.</p>
+            <p>Videographer & Video Editor | Sharing the World One Frame at a Time</p>
+        </footer>
+
+    </div>
+</body>
+</html>
